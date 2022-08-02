@@ -20,6 +20,7 @@ class UI{
     }
     deletebook(target){
         if(target.className==='delete'){
+          
             target.parentElement.parentElement.remove();
             console.log( target.parentElement.parentElement);
         }
@@ -68,15 +69,33 @@ class Store{
         books.push(book);
         console.log(books);
         localStorage.setItem('books',JSON.stringify(books));
- 
-
-    }
-   static deleteitems(book ,index){
-    const books=Store.getitems();
-    if(book.className==='delete'){
-        books=slice(index,1)
+        
         
     }
+    static deleteitems(isbn){
+    const books=Store.getitems();
+    console.log(isbn);
+   books.forEach(function(book,index){
+    if(book.isbn===isbn){
+        console.log('deleted');
+        books.splice(index,1);
+    }
+});
+localStorage.setItem('books',JSON.stringify(books));
+    // }
+    // books.forEach((book)=>{
+
+    //     if(book.className ==='delete'){
+              
+    //         book.parentElement.parentElement.remove();
+    //         console.log( book.parentElement.parentElement);
+           
+    //     }
+   
+    //     // if (book.className==='delete'){
+    //     //      console.log(234);
+    //     //     }
+    // });
 
     }
 
@@ -110,7 +129,7 @@ document.querySelector('tbody').addEventListener('click',(e)=>{
  
     const ui=new UI();
     ui.deletebook(e.target);
-    // Store.deleteitems(e.target);
+    Store.deleteitems(e.target.parentElement.previousElementSibling.textContent);
     ui.showalert('Book is Deleted','error');
   
     e.preventDefault();
