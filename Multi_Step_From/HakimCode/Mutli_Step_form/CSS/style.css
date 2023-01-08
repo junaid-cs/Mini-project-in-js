@@ -27,7 +27,7 @@ body{
     gap: 3rem;
 }
 .container .left-container{
-    flex-basis: 280px;
+    width: 280px;
     padding: 2rem 1rem;
     border-radius: 8px;
     background:url(/images/bg-sidebar-desktop.svg);
@@ -35,74 +35,80 @@ body{
     background-repeat: no-repeat;
 
 }
-.left-container .left-child{
+.left-container .child{
     color: hsl(0, 0%, 100%);
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
+    margin-bottom: 5px;
 }
-.left-child .btn{
+.child .btn{
+    border: 1px solid grey;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
     text-align: center;
-   font-size: 1.3rem;
-   border: 1px solid #fff;
-   width: 35px;
-   height: 35px;
-   border-radius: 50%;
 }
-.left-child .btn.active{
-    background: hsl(229, 24%, 87%);
-    color:#000;
+.child .btn.active{
+    background:hsl(229, 24%, 87%);
+    color: #000;
 }
-.left-child .text{
-    margin-bottom:10px;
-}
-.left-child .text span{
-    font-size: 0.9rem;
+.child .child-text span{
     color: grey;
 }
-.left-child .text p{
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: bold;
+.child .child-text p{
+    color: #fff;
+    font-size: 1.2rem;
 }
 
 .right-container{
-    padding: 1rem;
+    width:600px ;
+    padding: 2rem 0rem;
+
 }
-.right-container .personal-info .personal-heading{
-     font-weight: bold;
-     font-size: 2.3rem;
-     color:#000;
+.right-container .personal-info h1{
+    text-transform:capitalize;
+    margin-bottom: 6px;
+
 }
-.personal-info .personal-text{
+.personal-info p{
+    margin-bottom: 5px;
     color: grey;
-    font-size: 0.9rem;
-    margin-bottom: 10px;
 }
 .personal-info form{
+    margin-top: 10px;
     position: relative;
 }
-.personal-info form .input-feild{
-    margin-bottom: 12px;
+.personal-info form .input-container{
     display: flex;
     flex-direction: column;
+    margin-bottom: 8px;
 }
-.personal-info form .input-feild input{
-    padding: 0.8rem 1rem;
-    border-radius: 5px;
-    outline: none;
+.personal-info form .input-container input{
+    padding: 0.7rem 1rem;
+    border-radius: 6px;
+    outline:none;
     border: 1px solid grey;
 }
 .personal-info form .next-btn{
-    position: absolute;
-    right: 0;
-    bottom: -100px;
-    padding: 0.8rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-radius: 8px;
+    display: inline-block;
+    background:hsl(243, 100%, 62%);
+    padding:0.5rem 1.5rem;
+    color: #fff;
+    font-size: 1.3rem;
+    border-radius: 5px;
     outline: none;
     border: none;
-    background: hsl(243, 100%, 62%);
-    color: #fff;
+    position: absolute;
+    right: 1rem;
+   margin-top: 40px;
+
 }
+.form-container{
+    display: none;
+}
+.form-container.active{
+    display: block;
+}
+
