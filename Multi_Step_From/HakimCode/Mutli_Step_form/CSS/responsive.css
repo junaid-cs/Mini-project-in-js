@@ -1,0 +1,26 @@
+@media screen and (max-width:810px) {
+    .container{
+        width: 750px;
+    }
+}
+@media screen and (max-width:768px) {
+    body{
+        align-items: flex-start;
+    }
+    .container{
+        min-height: 700px;
+        flex-wrap: wrap;
+        overflow: visible;
+        justify-content: center;
+    }
+  .left-container{
+   width: 100%;
+    background: url(/images/bg-sidebar-mobile.svg);
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .left-container .left-child .text{
+    display: none;
+  }
+}
