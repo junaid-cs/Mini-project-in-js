@@ -1,0 +1,7 @@
+nav>*,ul li>*{
+    text-decoration: none;
+    color: black;
+}
+ul li{
+    list-style: none;
+}
