@@ -5,3 +5,9 @@ nav>*,ul li>*{
 ul li{
     list-style: none;
 }
+.nav_link > *{
+    color: rgb(100, 100, 11);
+}
+.nav_link > *:hover{
+    color: yellowgreen;
+}
