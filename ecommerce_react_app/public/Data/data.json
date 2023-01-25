@@ -1,57 +1,57 @@
 [{
 	"id": "1",
-	"title": "something",
-	"description": "something",
+	"title": "Cheese Sticks",
+	"description": "Freshly Baked Bread Filled with the Yummiest Cheese Blend to Satisfy your Cravings.",
 	"price": " 299",
 	"img": "/images/1.png"
 }, 
 {
 	"id": "2",
-	"title": "something",
-	"description": "something",
-	"price": " 299",
+	"title": "Chicken Supreme",
+	"description": "A Combination Of 3 Flavors of Chicken, Black Olives, Mushrooms Bell Pepper and Onion with Tomato Sauce.",
+	"price": " 590",
 	"img": "/images/2.png"
 },
 {
 	"id": "3",
-	"title": "something",
-	"description": "something",
-	"price": " 299",
+	"title": "Chicken Mushroom",
+	"description": "Tender Chunks of Marinated Grilled Chicken Tikka, Lots of Mushrooms, Onion and Tomato Sauce",
+	"price": "470",
 	"img": "/images/3.png"
 },
 {
 	"id": "4",
-	"title": "something",
-	"description": "something",
-	"price": " 299",
+	"title": "Sausage Pizza",
+	"description": "Chicken Sausages, Pizza Sauce and Cheese",
+	"price": "499",
 	"img": "/images/4.png"
 },
 {
 	"id": "5",
-	"title": "something",
-	"description": "something",
-	"price": " 299",
+	"title": "Cheese Lover Pizza",
+	"description": "Yummiest Blend of Cheese and Pizza Sauce",
+	"price": "470",
 	"img": "/images/5.png"
 },
 {
 	"id": "6",
-	"title": "something",
-	"description": "something",
-	"price": " 299",
+	"title": "Chicken Pepperoni Pizza",
+	"description": "Chicken Pepperoni, Pizza Sauce and Cheese",
+	"price": "499",
 	"img": "/images/6.png"
 },
 {
 	"id": "7",
-	"title": "something",
-	"description": "something",
-	"price": " 299",
+	"title": "Chicken Extreme",
+	"description": "Combination Of 3 Flavors of Chicken with Onion Bell Pepper, Green Olives, Mushrooms and Special Sauce",
+	"price": "1,150",
 	"img": "/images/7.png"
 },
 {
 	"id": "8",
-	"title": "something",
-	"description": "something",
-	"price": " 199",
+	"title": "Cheezious Special",
+	"description": "Delicious Special Chicken with Black Olives, Sausages and Bell Pepper",
+	"price": "1,150",
 	"img": "/images/8.png"
 },
 {
@@ -66,6 +66,6 @@
 	"title": "something",
 	"description": "something",
 	"price": " 299",
-	"img": "/images/10.png"
+	"img": "/images/1.png"
 }
 ]

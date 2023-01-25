@@ -11,9 +11,9 @@ const Products = () => {
   return (
     <div className='container product-list'>
       <div className='row'>
-       {
-        products.map((product)=> {return (<Product product={product}/>)})
-       }
+        {
+          products.map((product) => { return (<Product key={product.id} product={product} />) })
+        }
       </div>
     </div>
   )

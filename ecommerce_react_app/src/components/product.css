@@ -1,0 +1,36 @@
+.card{
+    border: 2px solid #f3f3f3;
+    border-radius: 20px;
+}
+.card:hover{
+    border: 2px solid rgb(255, 203, 4);
+}
+.h-37{
+    height: 37px;
+}
+hr{
+    height: 1px;
+    background-color: rgb(238, 240, 242)
+}
+
+
+.fs-13{
+    font-size: 13px;
+}
+.font-sans{
+    font-family: sans-serif;
+}
+.text-red{
+   color:  rgb(228, 32, 38);
+}
+.btn-red{
+   background-color:  rgb(228, 32, 38);
+   color: white;
+   border-radius: 30px;
+    font-weight: 700;
+    padding: 10px;
+}
+.btn-red:hover{
+    background-color: rgb(255, 203, 4);
+    color: black;
+}

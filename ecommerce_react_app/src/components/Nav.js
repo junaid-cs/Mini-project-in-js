@@ -4,9 +4,9 @@ import './Nav.css';
 const Nav = () => {
   return  (
     <>
-    <nav className='container d-flex justify-content-between'>
+    <nav className='container d-flex justify-content-between baba'>
     
-    <Link to='/'> <img style={{height: 45}} src='/images/logo.png' alt='Logo'></img> </Link>
+    <Link className='xyz' to='/'> <img style={{height: 45}} src='/images/logo.png' alt='Logo'></img> </Link>
     <ul className='d-flex'>
       <li className='p-2 nav_link'>
     <Link to='/'>Home</Link>
