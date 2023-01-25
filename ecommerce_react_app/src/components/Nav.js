@@ -6,7 +6,7 @@ const Nav = () => {
     <>
     <nav className='container d-flex justify-content-between'>
     
-    <Link to='/'> <img style={{height: 45}} src='/images/logo512.png' alt='Logo'></img> </Link>
+    <Link to='/'> <img style={{height: 45}} src='/images/logo.png' alt='Logo'></img> </Link>
     <ul className='d-flex'>
       <li className='p-2 nav_link'>
     <Link to='/'>Home</Link>

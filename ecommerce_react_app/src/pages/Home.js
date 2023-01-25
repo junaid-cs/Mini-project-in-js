@@ -16,7 +16,7 @@ const Home = () => {
                   <a href='#' className='btn btn-yellow'>Shop</a>
                 </div>
                 <div className='hero-img'>
-                  <img style={{height:450}} className='me-5 pe-5 pt-0 mt-0' src='/images/logo192.png'></img>
+                  <img style={{height:450}} className='me-5 pe-5 pt-0 mt-0' src='/images/pizza.png'></img>
                 </div>
 
               </div>
