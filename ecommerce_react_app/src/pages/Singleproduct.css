@@ -1,0 +1,8 @@
+.h-220{
+    min-height: 220px;
+}
+@media  screen and (max-width:765px) {
+    .h-220{
+        min-height: auto;
+    }
+}
