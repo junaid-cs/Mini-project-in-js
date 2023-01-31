@@ -1,5 +1,4 @@
 import {Link} from 'react-router-dom';
-// import Logo from '../images/logo192.png'
 import './Nav.css';
 const Nav = () => {
   return  (
@@ -15,9 +14,9 @@ const Nav = () => {
     <Link to='/products'>Products</Link>
       </li>
       <li className='p-2 nav_link'>
-    <Link to='/caret' style={{backgroundColor:'yellow'} } className="px-2 py-1 rounded-4">
+    <Link to='/caret' style={{backgroundColor:'rgb(255, 203, 4)'} } className="px-2 py-1 rounded-4">
       <span className='mx-1 fw-bold' style={{fontSize:14}}>3</span>
-      <img src="/images/logo.png" style={{width:22}} alt="" srcset="" />
+      <img src="/images/logo.png" className='mb-1' style={{width:22}} alt="" srcSet="" />
     </Link>
       </li>
 
