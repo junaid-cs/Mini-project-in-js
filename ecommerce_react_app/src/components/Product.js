@@ -4,20 +4,21 @@ import './product.css';
 import { CartContext } from '../CartContext';
 
 const Product = (props) => {
+    const { product } = props;
     const { cart, setcart } = useContext(CartContext);
     const addToCart = (e, product) => {
-        let _cart = { ...cart };
-        // if (!_cart.items) {
-        //     _cart.items = {};
-        //     console.log(typeof _cart.items)
-        //     console.log('empty');
-        // }
+        let _cart = {...cart};
+        // console.log(_cart)
+        if (!_cart.items) {
+            _cart.items = {};
+        }
+        // console.log(product.id);
         if (_cart.items[product.id]) {
-            _cart.items[product.id] += 1;
-            console.log("add exsisting product");
+            _cart.items[product.id] = _cart.items[product.id] + 1;
+            // console.log("add exsisting product");
         }
         else {
-            console.log(`add  product${_cart.items[product.id]}`)
+            // console.log(`add  product`)
             _cart.items[product.id] = 1;
             // console.log(_cart.items[product.id]);
         }
@@ -25,12 +26,12 @@ const Product = (props) => {
             _cart.totalitems = 0;
         }
         _cart.totalitems += 1
-        setcart(_cart.items);
-        console.log(_cart.items)
+        setcart(_cart);
+        // console.log(_cart.items)
         // console.log(_cart.items[product.id]);
         e.preventDefault();
     }
-    const { product } = props;
+   
     return (
         <div className='col-10 col-sm-6 col-md-4 col-lg-3 mx-auto mx-lg-0   my-2'>
             <Link to={`/product/${product.id}`} style={{ textDecoration: 'none', color: 'black' }}>

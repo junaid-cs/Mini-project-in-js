@@ -8,6 +8,9 @@ ul li{
 .nav_link > *{
     color: rgb(100, 100, 11);
 }
-.nav_link > *:hover{
+.nav_link a:hover{
     color: yellowgreen;
+}
+.nav_link a.hover-black:hover{
+    color: black !important;
 }

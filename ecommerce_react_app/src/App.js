@@ -9,8 +9,9 @@ import { CartContext } from './CartContext';
 const App = () =>{ 
 const [cart,setcart]= useState({});
 useEffect(()=>{
-  const cart = window.localStorage.getItem('cart')
-})
+  const cart = window.localStorage.getItem('cart');
+  setcart(JSON.parse(cart));
+},[])
 useEffect(()=>{
    window.localStorage.setItem('cart',JSON.stringify(cart));
 },[cart])

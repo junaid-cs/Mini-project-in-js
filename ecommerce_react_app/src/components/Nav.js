@@ -1,6 +1,13 @@
+import { useContext } from 'react';
 import {Link} from 'react-router-dom';
+import { CartContext } from '../CartContext';
 import './Nav.css';
 const Nav = () => {
+  const {cart} = useContext(CartContext);
+  if(!cart.totalitems){
+    cart.totalitems = 0;
+  }
+  console.log(cart.totalitems)
   return  (
     <>
     <nav className='container d-flex justify-content-between baba'>
@@ -14,9 +21,9 @@ const Nav = () => {
     <Link to='/products'>Products</Link>
       </li>
       <li className='p-2 nav_link'>
-    <Link to='/caret' style={{backgroundColor:'rgb(255, 203, 4)'} } className="px-2 py-1 rounded-4">
-      <span className='mx-1 fw-bold' style={{fontSize:14}}>3</span>
-      <img src="/images/logo.png" className='mb-1' style={{width:22}} alt="" srcSet="" />
+    <Link to='/caret' style={{backgroundColor:'rgb(255, 203, 4)'} } className="px-2 py-1 rounded-4 hover-black">
+      <span className='mx-1 fw-bold' style={{fontSize:14}}>{cart.totalitems}</span>
+      <img src="/images/cart.png" className='' style={{width:25}} alt="" srcSet="" />
     </Link>
       </li>
 
