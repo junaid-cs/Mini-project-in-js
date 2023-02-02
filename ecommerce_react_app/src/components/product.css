@@ -30,6 +30,17 @@ hr{
     font-weight: 700;
     padding: 10px;
 }
+.btn-green{
+   background-color:  rgb(3, 110, 3);
+   color: white;
+   border-radius: 30px;
+    font-weight: 700;
+    padding: 10px;
+}
+.btn-green:hover{
+   background-color:  rgb(3, 110, 3);
+   color: white;
+}
 .btn-red:hover{
     background-color: rgb(255, 203, 4);
     color: black;

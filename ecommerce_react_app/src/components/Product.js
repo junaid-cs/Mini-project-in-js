@@ -1,9 +1,10 @@
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import { Link } from 'react-router-dom';
 import './product.css';
 import { CartContext } from '../CartContext';
 
 const Product = (props) => {
+    const [isAdded,setisAdded ]= useState(false);
     const { product } = props;
     const { cart, setcart } = useContext(CartContext);
     const addToCart = (e, product) => {
@@ -30,6 +31,10 @@ const Product = (props) => {
         // console.log(_cart.items)
         // console.log(_cart.items[product.id]);
         e.preventDefault();
+        setisAdded(true);
+        setTimeout(() => {
+            setisAdded(false)
+        }, 1000);
     }
    
     return (
@@ -42,7 +47,7 @@ const Product = (props) => {
                         <p className="card-text fs-13 p-0 m-0 fs-bold font-sans h-37 overflow-hidden">{product.description}</p>
                         <hr className='my-1' />
                         <h6 className="text-center rounded text-red fw-bolder">Rs.{product.price}</h6>
-                        <button onClick={(e) => { addToCart(e, product) }} className='btn btn-red fs-13'>Add to Cart</button>
+                        <button onClick={(e) => { addToCart(e, product) }} className={`btn ${isAdded ? 'btn-green' : 'btn-red'}  fs-13`}>Add to Cart</button>
                     </div>
                 </div>
             </Link>

@@ -8,7 +8,7 @@ useEffect(()=>{
     let id =param.id;
     fetch(`/Data/data.json`)
       .then(res => res.json())
-      .then(product => setProduct(product[`${id - 1}`]));
+      .then(product => setProduct(product[`${id}`]));
 },[])
 
    
